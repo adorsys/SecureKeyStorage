@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.author = { 'adorsys' => 'info@adorsys.de' }
   s.source = {
     # TODO: Find out how to point to the git subfolder
-    #:git => 'https://github.com/adorsys/secure-key-storage.git',
-    #:tag => s.version.to_s
+    :git => 'https://github.com/adorsys/secure-key-storage.git',
+    :tag => s.version.to_s
   }
 
   # Platform setup
