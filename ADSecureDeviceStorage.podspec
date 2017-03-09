@@ -6,8 +6,9 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/adorsys/secure-key-storage/tree/master/secure-device-storage/sds-ios'
   s.author = { 'adorsys' => 'info@adorsys.de' }
   s.source = {
-    :git => 'https://github.com/adorsys/secure-key-storage.git',
-    :tag => s.version.to_s
+    # TODO: Find out how to point to the git subfolder
+    #:git => 'https://github.com/adorsys/secure-key-storage.git',
+    #:tag => s.version.to_s
   }
 
   # Platform setup

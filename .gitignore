@@ -1,3 +1,9 @@
+# Project specific
+# exclude pods dependencies
+Pods/
+Example/Podfile.lock
+Example/**/*.xcworkspacedata
+
 #########################
 # .gitignore file for Xcode4 / OS X Source projects
 #

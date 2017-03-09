@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87407E591E705F3F0040A66C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87407E581E705F3F0040A66C /* AppDelegate.swift */; };
+		87407E5B1E705F3F0040A66C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87407E5A1E705F3F0040A66C /* ViewController.swift */; };
+		87407E5E1E705F3F0040A66C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87407E5C1E705F3F0040A66C /* Main.storyboard */; };
+		87407E601E705F3F0040A66C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87407E5F1E705F3F0040A66C /* Assets.xcassets */; };
+		87407E631E705F3F0040A66C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87407E611E705F3F0040A66C /* LaunchScreen.storyboard */; };
+		881F3EA56099693C1E040B8B /* Pods_ADSecureDeviceStorage_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38156DD18EF3A3990B5B7872 /* Pods_ADSecureDeviceStorage_Example.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38156DD18EF3A3990B5B7872 /* Pods_ADSecureDeviceStorage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADSecureDeviceStorage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		834076B044A46101EFD25C47 /* Pods-ADSecureDeviceStorage Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADSecureDeviceStorage Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ADSecureDeviceStorage Example/Pods-ADSecureDeviceStorage Example.release.xcconfig"; sourceTree = "<group>"; };
+		87407E551E705F3F0040A66C /* ADSecureDeviceStorage Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ADSecureDeviceStorage Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87407E581E705F3F0040A66C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87407E5A1E705F3F0040A66C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87407E5D1E705F3F0040A66C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87407E5F1E705F3F0040A66C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87407E621E705F3F0040A66C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87407E641E705F3F0040A66C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF3DF6CAAF4BFE074667D28E /* Pods-ADSecureDeviceStorage Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADSecureDeviceStorage Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ADSecureDeviceStorage Example/Pods-ADSecureDeviceStorage Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87407E521E705F3F0040A66C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881F3EA56099693C1E040B8B /* Pods_ADSecureDeviceStorage_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B07C841D24EBC34329F2FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38156DD18EF3A3990B5B7872 /* Pods_ADSecureDeviceStorage_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87407E4C1E705F3F0040A66C = {
+			isa = PBXGroup;
+			children = (
+				87407E571E705F3F0040A66C /* ADSecureDeviceStorage Example */,
+				87407E561E705F3F0040A66C /* Products */,
+				96526CD4A9507B9473FE2FF2 /* Pods */,
+				18B07C841D24EBC34329F2FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87407E561E705F3F0040A66C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87407E551E705F3F0040A66C /* ADSecureDeviceStorage Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87407E571E705F3F0040A66C /* ADSecureDeviceStorage Example */ = {
+			isa = PBXGroup;
+			children = (
+				87407E581E705F3F0040A66C /* AppDelegate.swift */,
+				87407E5A1E705F3F0040A66C /* ViewController.swift */,
+				87407E5C1E705F3F0040A66C /* Main.storyboard */,
+				87407E5F1E705F3F0040A66C /* Assets.xcassets */,
+				87407E611E705F3F0040A66C /* LaunchScreen.storyboard */,
+				87407E641E705F3F0040A66C /* Info.plist */,
+			);
+			path = "ADSecureDeviceStorage Example";
+			sourceTree = "<group>";
+		};
+		96526CD4A9507B9473FE2FF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF3DF6CAAF4BFE074667D28E /* Pods-ADSecureDeviceStorage Example.debug.xcconfig */,
+				834076B044A46101EFD25C47 /* Pods-ADSecureDeviceStorage Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87407E541E705F3F0040A66C /* ADSecureDeviceStorage Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87407E671E705F3F0040A66C /* Build configuration list for PBXNativeTarget "ADSecureDeviceStorage Example" */;
+			buildPhases = (
+				0665AE5D43F00FC3458B2D7B /* [CP] Check Pods Manifest.lock */,
+				87407E511E705F3F0040A66C /* Sources */,
+				87407E521E705F3F0040A66C /* Frameworks */,
+				87407E531E705F3F0040A66C /* Resources */,
+				72F909347E0E697DB071BF82 /* [CP] Embed Pods Frameworks */,
+				6102E937880861DD98D3D66E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ADSecureDeviceStorage Example";
+			productName = "ADSecureDeviceStorage Example";
+			productReference = 87407E551E705F3F0040A66C /* ADSecureDeviceStorage Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87407E4D1E705F3F0040A66C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "adorsys GmbH & Co KG";
+				TargetAttributes = {
+					87407E541E705F3F0040A66C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FCNMCC2Y82;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 87407E501E705F3F0040A66C /* Build configuration list for PBXProject "ADSecureDeviceStorage Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87407E4C1E705F3F0040A66C;
+			productRefGroup = 87407E561E705F3F0040A66C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87407E541E705F3F0040A66C /* ADSecureDeviceStorage Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87407E531E705F3F0040A66C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87407E631E705F3F0040A66C /* LaunchScreen.storyboard in Resources */,
+				87407E601E705F3F0040A66C /* Assets.xcassets in Resources */,
+				87407E5E1E705F3F0040A66C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0665AE5D43F00FC3458B2D7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6102E937880861DD98D3D66E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADSecureDeviceStorage Example/Pods-ADSecureDeviceStorage Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72F909347E0E697DB071BF82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADSecureDeviceStorage Example/Pods-ADSecureDeviceStorage Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87407E511E705F3F0040A66C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87407E5B1E705F3F0040A66C /* ViewController.swift in Sources */,
+				87407E591E705F3F0040A66C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		87407E5C1E705F3F0040A66C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87407E5D1E705F3F0040A66C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87407E611E705F3F0040A66C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87407E621E705F3F0040A66C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87407E651E705F3F0040A66C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87407E661E705F3F0040A66C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87407E681E705F3F0040A66C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF3DF6CAAF4BFE074667D28E /* Pods-ADSecureDeviceStorage Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FCNMCC2Y82;
+				INFOPLIST_FILE = "ADSecureDeviceStorage Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.adorsys.ADSecureDeviceStorage-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		87407E691E705F3F0040A66C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 834076B044A46101EFD25C47 /* Pods-ADSecureDeviceStorage Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FCNMCC2Y82;
+				INFOPLIST_FILE = "ADSecureDeviceStorage Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.adorsys.ADSecureDeviceStorage-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87407E501E705F3F0040A66C /* Build configuration list for PBXProject "ADSecureDeviceStorage Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87407E651E705F3F0040A66C /* Debug */,
+				87407E661E705F3F0040A66C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87407E671E705F3F0040A66C /* Build configuration list for PBXNativeTarget "ADSecureDeviceStorage Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87407E681E705F3F0040A66C /* Debug */,
+				87407E691E705F3F0040A66C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87407E4D1E705F3F0040A66C /* Project object */;
+}
