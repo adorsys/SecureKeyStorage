@@ -40,7 +40,7 @@ internal class KeychainService {
             }
             query[kSecAttrAccessControl as String] = accessControl
         } else {
-            query[kSecAttrAccessible as String] = kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly
+            query[kSecAttrAccessible as String] = kSecAttrAccessibleWhenUnlockedThisDeviceOnly
         }
         
         query[kSecValueData as String] = data
@@ -85,6 +85,10 @@ internal class KeychainService {
             debugPrint("delete: \(status)")
             throw SDSError.unhandledError(status: status)
         }
+    }
+    
+    internal func clear() {
+        // TODO: remove all values stored by this service
     }
     
     private func keychainQuery(forKey key: String? = nil) -> [String : Any] {

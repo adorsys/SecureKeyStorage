@@ -1,6 +1,6 @@
 //
 //  EncryptedStorageService.swift
-//  Pods
+//  SecureDeviceStorage
 //
 //  Created by Johannes Steib on 10.03.17.
 //
@@ -34,6 +34,18 @@ internal class EncryptedStorageService {
         let encryptedData = try keychain.get(key)
         let (encryptionKey, hmacKey) = try getKeys()
         return try decrypt(encryptedData, with: encryptionKey, hmac: hmacKey)
+    }
+    
+    internal func remove(_ key: String) throws {
+        // TODO: remove a value for a given key
+    }
+    
+    internal func clear() {
+        // TODO: remove all values that were created by this service (particular user)
+    }
+    
+    internal static func clearAllValues(forService service: String) {
+        // TODO: remove all values for a given service (all users)
     }
     
     private func getKeys() throws -> (encryption: Data, hmac: Data) {
