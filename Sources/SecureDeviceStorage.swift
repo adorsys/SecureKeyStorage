@@ -11,6 +11,7 @@ public enum SDSError: Error {
     case unhandledError(status: OSStatus)
     case unexpectedError
     case itemNotFoundError
+    case couldNotSaveItemError
 }
 
 import LocalAuthentication

@@ -6,6 +6,8 @@
 //
 //
 
+import Foundation
+
 internal class KeychainService {
     let service: String
     let accessGroup: String?
