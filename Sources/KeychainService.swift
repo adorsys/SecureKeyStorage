@@ -19,9 +19,7 @@ internal class KeychainService {
         
         try remove(key: key)
         
-        var query = KeychainService.keychainQuery(withService: service,
-                                                  account: key,
-                                                  accessGroup: accessGroup)
+        var query = keychainQuery(forKey: key)
         
         query[kSecUseAuthenticationUI as String] = kSecUseAuthenticationUIFail
         
@@ -51,14 +49,14 @@ internal class KeychainService {
         }
     }
     
-    internal func get(_ key: String) throws -> Data {
-        var query = KeychainService.keychainQuery(withService: service,
-                                                  account: key,
-                                                  accessGroup: accessGroup)
+    internal func get(_ key: String, with prompt: String? = nil) throws -> Data {
+        var query = keychainQuery(forKey: key)
         query[kSecMatchLimit as String] = kSecMatchLimitOne
         query[kSecReturnAttributes as String] = kCFBooleanFalse
         query[kSecReturnData as String] = kCFBooleanTrue
-        query[kSecUseOperationPrompt as String] = "Test"
+        if let authPrompt = prompt {
+            query[kSecUseOperationPrompt as String] = authPrompt
+        }
         
         var queryResult: AnyObject?
         let status = SecItemCopyMatching(query as CFDictionary, &queryResult)
@@ -79,9 +77,7 @@ internal class KeychainService {
     }
     
     internal func remove(key: String) throws {
-        let query = KeychainService.keychainQuery(withService: service,
-                                                  account: key,
-                                                  accessGroup: accessGroup)
+        let query = keychainQuery(forKey: key)
         let status = SecItemDelete(query as CFDictionary)
         if status != errSecSuccess && status != errSecItemNotFound {
             debugPrint("delete: \(status)")
@@ -89,12 +85,12 @@ internal class KeychainService {
         }
     }
     
-    private static func keychainQuery(withService service: String, account: String? = nil, accessGroup: String? = nil) -> [String : Any] {
+    private func keychainQuery(forKey key: String? = nil) -> [String : Any] {
         var query = [String : Any]()
         query[kSecClass as String] = kSecClassGenericPassword
         query[kSecAttrService as String] = service
         
-        if let account = account {
+        if let account = key {
             query[kSecAttrAccount as String] = account
         }
         
