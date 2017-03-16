@@ -87,8 +87,13 @@ internal class KeychainService {
         }
     }
     
-    internal func clear() {
-        // TODO: remove all values stored by this service
+    internal func clear() throws {
+        var query = keychainQuery()
+        query[kSecMatchLimit as String] = kSecMatchLimitAll
+        let status = SecItemDelete(query as CFDictionary)
+        if status != errSecSuccess && status != errSecItemNotFound {
+            throw SDSError.unhandledError(status: status)
+        }
     }
     
     private func keychainQuery(forKey key: String? = nil) -> [String : Any] {

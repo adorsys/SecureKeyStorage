@@ -37,15 +37,11 @@ internal class EncryptedStorageService {
     }
     
     internal func remove(_ key: String) throws {
-        // TODO: remove a value for a given key
+        try keychain.remove(key: key)
     }
     
-    internal func clear() {
-        // TODO: remove all values that were created by this service (particular user)
-    }
-    
-    internal static func clearAllValues(forService service: String) {
-        // TODO: remove all values for a given service (all users)
+    internal func clear() throws {
+        try keychain.clear()
     }
     
     private func getKeys() throws -> (encryption: Data, hmac: Data) {
