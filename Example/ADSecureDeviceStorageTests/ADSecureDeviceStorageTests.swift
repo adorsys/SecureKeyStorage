@@ -23,8 +23,8 @@ class ADSecureDeviceStorageTests: XCTestCase {
     }
     
     override func tearDown() {
-        service.clear()
-        anotherService.clear()
+        try? service.clear()
+        try? anotherService.clear()
         
         super.tearDown()
     }

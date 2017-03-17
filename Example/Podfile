@@ -4,4 +4,8 @@ target 'ADSecureDeviceStorage Example' do
 
   pod 'ADSecureDeviceStorage', :path => '..'
 
+  target 'ADSecureDeviceStorageTests' do
+      inherit! :search_paths
+  end
+
 end
