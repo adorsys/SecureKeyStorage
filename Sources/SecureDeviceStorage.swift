@@ -22,11 +22,11 @@ public final class SecureDeviceStorage {
         return LAContext().canEvaluatePolicy(.deviceOwnerAuthentication, error: nil)
     }
     
-    public static func keychainStore(name: String = SecureDeviceStorage.serviceName) -> SecureStore? {
+    public static func keychainStore(name: String = SecureDeviceStorage.serviceName, authenticationPrompt: String? = nil) -> SecureStore? {
         guard SecureDeviceStorage.deviceHasPasscode() else {
             return nil
         }
-        return KeychainStore(service: name)
+        return KeychainStore(service: name, authenticationPrompt: authenticationPrompt)
     }
     
     public static func encryptedStore(name: String = SecureDeviceStorage.serviceName, password: String, user: String) -> SecureStore {

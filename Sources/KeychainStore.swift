@@ -1,6 +1,6 @@
 //
 //  KeychainStore.swift
-//  Pods
+//  SecureDeviceStorage
 //
 //  Created by Johannes Steib on 16.03.17.
 //
@@ -8,9 +8,15 @@
 
 public class KeychainStore: SecureStore {
     let keychain: KeychainService
+    var authenticationPrompt: String
     
-    public init(service: String) {
+    public init(service: String, authenticationPrompt: String? = nil) {
         keychain = KeychainService(service: service)
+        if let prompt = authenticationPrompt {
+            self.authenticationPrompt = prompt
+        } else {
+            self.authenticationPrompt = ""
+        }
     }
     
     public func save(_ data: Data, for key: String) throws {
@@ -18,8 +24,7 @@ public class KeychainStore: SecureStore {
     }
     
     public func getData(for key: String) throws -> Data {
-        return try keychain.get(key, with: "prompt")
-        
+        return try keychain.get(key, with: authenticationPrompt)
     }
     
     public func remove(_ key: String) throws {

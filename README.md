@@ -22,7 +22,47 @@ To encrypt sensitive data on devices that are not secured by a passcode a random
 
 ## Usage
 
-TODO
+It is possible to store ```String``` and ```Data```.
+
+### Keychain Store
+How to use a keychain store with user presence protected items.
+
+#### Save string
+```swift
+let keychainStore = SecureDeviceStorage.keychainStore()
+do {
+  try keychainStore.save("Secret Token", for: "secretTokenKey")
+} catch let error {
+  // handle error
+}
+```
+#### Obtain string
+This operation requires an authentication of the user. Thus is must be run on a background thread.
+
+```swift
+DispatchQueue.global().async {
+  do {
+    let secret = try keychainStore.getString(for: "secretTokenKey")
+  } catch let error {
+    // handle error
+  }
+}
+```
+
+### Encrypted Store
+How use the encrypted store to protect items by a password.
+#### Save
+```swift
+let secureStore = SecureDeviceStorage.encryptedStore(password: "geheim", user: "username")
+if let data = "Secret Token".data(using: .utf8) {
+  try? secureStore.save(data, for: "secretTokenKey")
+}
+```
+
+#### Obtain
+```swift
+let data = try? secureStore.getData(for: "secretTokenKey")
+```
 
 ## Further reading
 
