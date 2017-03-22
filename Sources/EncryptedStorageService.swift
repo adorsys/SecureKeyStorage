@@ -22,7 +22,7 @@ internal class EncryptedStorageService {
     
     internal func save(_ data: Data, for key: String) throws {
         do {
-            let (encryptionKey, hmacKey) = try getKeys()
+            let (encryptionKey, hmacKey) = try getOrCreateKeys()
             let encryptedData = encrypt(data, with: encryptionKey, hmac: hmacKey)
             try keychain.save(encryptedData, for: key, withUserPresence: false)
         } catch {
@@ -32,7 +32,7 @@ internal class EncryptedStorageService {
     
     internal func get(_ key: String) throws -> Data {
         let encryptedData = try keychain.get(key)
-        let (encryptionKey, hmacKey) = try getKeys()
+        let (encryptionKey, hmacKey) = try getKeysFromKeychain(for: user, with: password)
         return try decrypt(encryptedData, with: encryptionKey, hmac: hmacKey)
     }
     
@@ -44,7 +44,7 @@ internal class EncryptedStorageService {
         try keychain.clear()
     }
     
-    private func getKeys() throws -> (encryption: Data, hmac: Data) {
+    private func getOrCreateKeys() throws -> (encryption: Data, hmac: Data) {
         if let keys = try? getKeysFromKeychain(for: user, with: password) {
             return keys
         }
