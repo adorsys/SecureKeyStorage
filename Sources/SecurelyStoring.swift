@@ -1,12 +1,12 @@
 //
-//  SecureStore.swift
+//  SecurelyStoring.swift
 //  SecureDeviceStorage
 //
 //  Created by Johannes Steib on 16.03.17.
 //
 //
 
-public protocol SecureStore {
+public protocol SecurelyStoring {
     func save(_ string: String, for key: String) throws
     func save(_ data: Data, for key: String) throws
     func getString(for key: String) throws -> String
@@ -15,7 +15,7 @@ public protocol SecureStore {
     func clear() throws
 }
 
-extension SecureStore {
+extension SecurelyStoring {
     public func save(_ string: String, for key: String) throws {
         guard let data = string.data(using: .utf8) else {
             throw SDSError.stringConversionError

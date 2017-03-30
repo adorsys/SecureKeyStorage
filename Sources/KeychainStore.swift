@@ -6,7 +6,7 @@
 //
 //
 
-public class KeychainStore: SecureStore {
+public class KeychainStore: SecurelyStoring {
     let keychain: KeychainService
     var authenticationPrompt: String
     

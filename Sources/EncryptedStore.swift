@@ -6,7 +6,7 @@
 //
 //
 
-public class EncryptedStore: SecureStore {
+public class EncryptedStore: SecurelyStoring {
     let secureStore: EncryptedStorageService
     
     public init(service: String, user: String, password: String) {
