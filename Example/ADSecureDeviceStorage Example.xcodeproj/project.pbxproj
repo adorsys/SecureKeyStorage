@@ -138,6 +138,7 @@
 			buildConfigurationList = 87407E671E705F3F0040A66C /* Build configuration list for PBXNativeTarget "ADSecureDeviceStorage Example" */;
 			buildPhases = (
 				0665AE5D43F00FC3458B2D7B /* [CP] Check Pods Manifest.lock */,
+				87AAB5711EBB24E700E53D23 /* swiftlint */,
 				87407E511E705F3F0040A66C /* Sources */,
 				87407E521E705F3F0040A66C /* Frameworks */,
 				87407E531E705F3F0040A66C /* Resources */,
@@ -281,6 +282,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADSecureDeviceStorage Example/Pods-ADSecureDeviceStorage Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		87AAB5711EBB24E700E53D23 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		98D1812F38A2DB38ECAA260F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
