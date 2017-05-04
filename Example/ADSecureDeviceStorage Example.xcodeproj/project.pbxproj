@@ -182,7 +182,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "adorsys GmbH & Co KG";
 				TargetAttributes = {
 					87407E541E705F3F0040A66C = {
@@ -489,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6F4357344CA570B8469E1DF /* Pods-ADSecureDeviceStorage Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FCNMCC2Y82;
 				INFOPLIST_FILE = "ADSecureDeviceStorage Example/Info.plist";
@@ -503,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 834076B044A46101EFD25C47 /* Pods-ADSecureDeviceStorage Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FCNMCC2Y82;
 				INFOPLIST_FILE = "ADSecureDeviceStorage Example/Info.plist";
