@@ -23,8 +23,6 @@ internal class KeychainService {
 
         var query = keychainQuery(forKey: key)
 
-        query[kSecUseAuthenticationUI as String] = kSecUseAuthenticationUIFail
-
         if protection {
             var error: Unmanaged<CFError>?
             let protectionRef = kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly as CFTypeRef
