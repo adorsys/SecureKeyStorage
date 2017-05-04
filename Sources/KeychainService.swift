@@ -11,25 +11,27 @@ import Foundation
 internal class KeychainService {
     let service: String
     let accessGroup: String?
-    
+
     init(service: String, accessGroup: String? = nil) {
         self.service = service
         self.accessGroup = accessGroup
     }
-    
+
     internal func save(_ data: Data, for key: String, withUserPresence protection: Bool = true) throws {
-        
+
         try remove(key: key)
-        
+
         var query = keychainQuery(forKey: key)
-        
+
         query[kSecUseAuthenticationUI as String] = kSecUseAuthenticationUIFail
-        
+
         if protection {
             var error: Unmanaged<CFError>?
+            let protectionRef = kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly as CFTypeRef
             guard let accessControl = SecAccessControlCreateWithFlags(kCFAllocatorDefault,
-                                                                      kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly as CFTypeRef,
-                                                                      .userPresence, &error)
+                                                                      protectionRef,
+                                                                      .userPresence,
+                                                                      &error)
                 else {
                     if let error = error?.takeUnretainedValue() {
                         throw error
@@ -42,7 +44,7 @@ internal class KeychainService {
         } else {
             query[kSecAttrAccessible as String] = kSecAttrAccessibleWhenUnlockedThisDeviceOnly
         }
-        
+
         query[kSecValueData as String] = data
         let status = SecItemAdd(query as CFDictionary, nil)
         if status != errSecSuccess {
@@ -50,7 +52,7 @@ internal class KeychainService {
             throw SDSError.unhandledError(status: status)
         }
     }
-    
+
     internal func get(_ key: String, with prompt: String? = nil) throws -> Data {
         var query = keychainQuery(forKey: key)
         query[kSecMatchLimit as String] = kSecMatchLimitOne
@@ -59,10 +61,10 @@ internal class KeychainService {
         if let authPrompt = prompt {
             query[kSecUseOperationPrompt as String] = authPrompt
         }
-        
+
         var queryResult: AnyObject?
         let status = SecItemCopyMatching(query as CFDictionary, &queryResult)
-        
+
         guard status != errSecItemNotFound else {
             debugPrint("get: item not found")
             throw SDSError.itemNotFoundError
@@ -77,7 +79,7 @@ internal class KeychainService {
         }
         return data
     }
-    
+
     internal func remove(key: String) throws {
         let query = keychainQuery(forKey: key)
         let status = SecItemDelete(query as CFDictionary)
@@ -86,7 +88,7 @@ internal class KeychainService {
             throw SDSError.unhandledError(status: status)
         }
     }
-    
+
     internal func clear() throws {
         var query = keychainQuery()
         query[kSecMatchLimit as String] = kSecMatchLimitAll
@@ -95,20 +97,20 @@ internal class KeychainService {
             throw SDSError.unhandledError(status: status)
         }
     }
-    
+
     private func keychainQuery(forKey key: String? = nil) -> [String : Any] {
-        var query = [String : Any]()
+        var query = [String: Any]()
         query[kSecClass as String] = kSecClassGenericPassword
         query[kSecAttrService as String] = service
-        
+
         if let account = key {
             query[kSecAttrAccount as String] = account
         }
-        
+
         if let accessGroup = accessGroup {
             query[kSecAttrAccessGroup as String] = accessGroup
         }
-        
+
         return query
     }
 }

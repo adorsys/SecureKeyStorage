@@ -14,12 +14,15 @@ class ViewController: UIViewController {
     private let secretKey = "keyForSecret"
     private let titleForSaveAlert = "Save Information Securely"
     private let titleForGetAlert = "Get Secured Information"
-    private let messageForSaveAlert = "Your information is stored securely on the device and protected with the password you enter in the field below."
-    private let messageForGetAlert = "To get the secure information you have to enter the passwort that you used to protect the data."
+    private let messageForSaveAlert = "Your information is stored securely on "
+        + "the device and protected with the password you enter in the field below."
+    private let messageForGetAlert = "To get the secure information you have to "
+        + "enter the passwort that you used to protect the data."
     private let saveActionTitle = "Save Information"
     private let getActionTitle = "Get Information"
     private let cancelActionTitle = "Cancel"
-    private let authenticationPrompt = "Please use your fingerprint to get the secured information."
+    private let authenticationPrompt = "Please use your fingerprint to get the "
+        + "secured information."
 
     private let user = "john.doe"
 
@@ -34,7 +37,7 @@ class ViewController: UIViewController {
     var encryptedStoreContainsValue = false
 
     let hasPasscode = SecureDeviceStorage.deviceHasPasscode()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -164,7 +167,7 @@ class ViewController: UIViewController {
                                       entryHandler: @escaping (String?) -> Void) -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
 
-        let confirmAction = UIAlertAction(title: confirmActionTitle, style: .default) { (action) in
+        let confirmAction = UIAlertAction(title: confirmActionTitle, style: .default) { _ in
             let textField = alert.textFields?.first
             entryHandler(textField?.text)
         }

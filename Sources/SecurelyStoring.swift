@@ -22,7 +22,7 @@ extension SecurelyStoring {
         }
         try save(data, for: key)
     }
-    
+
     public func getString(for key: String) throws -> String {
         guard let data = try? getData(for: key) else {
             throw SDSError.itemNotFoundError
