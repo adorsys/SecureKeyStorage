@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     var keychainStoreContainsValue = false
     var encryptedStoreContainsValue = false
 
-    let hasPasscode = SecureDeviceStorage.deviceHasPasscode()
+    let hasPasscode = SecureDeviceStorage.deviceHasPasscode
 
     override func viewDidLoad() {
         super.viewDidLoad()
