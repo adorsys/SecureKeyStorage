@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ADSecureDeviceStorage
+import SecureDeviceStorage
 
 class ViewController: UIViewController {
 
