@@ -6,10 +6,21 @@
 //
 //
 
+/// Saves data to and retrieves it from the keychain.
 public class KeychainStore: SecurelyStoring {
-    let keychain: KeychainService
+    /// The service that does the actual operations on the keychain.
+    private let keychain: KeychainService
+    /// A string that is displayed to the user when
+    /// retrieving data that is secured with touch id.
     var authenticationPrompt: String
 
+    /// Creates a new keychain store with a service name and an optional
+    /// authentication prompt
+    ///
+    /// - Parameters:
+    ///   - service: The service name that is used to save and retrieve data.
+    ///   - authenticationPrompt: A string that is displayed to the user when
+    ///   retrieving data that is secured with touch id.
     public init(service: String, authenticationPrompt: String? = nil) {
         keychain = KeychainService(service: service)
         if let prompt = authenticationPrompt {
