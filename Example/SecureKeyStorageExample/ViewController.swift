@@ -122,41 +122,42 @@ class ViewController: UIViewController {
     }
 
     func storeEncrypted(secret: String) {
-        let alert = alertControllerWithTextField(title: titleForSaveAlert,
-                                                 message: messageForSaveAlert,
-                                                 confirmActionTitle: saveActionTitle) { (password) in
-                                                    guard let pw = password else {
-                                                        return
-                                                    }
-                                                    do {
-                                                        try SecureDeviceStorage
-                                                            .encryptedStore(password: pw, user: self.user)
-                                                            .save(secret, for: self.secretKey)
-                                                        self.encryptedStoreContainsValue = true
-                                                        self.updateUI()
-                                                    } catch {
-                                                        // TODO: handle failure
-                                                    }
-
+        let alert = alertControllerWithTextField(
+            title: titleForSaveAlert,
+            message: messageForSaveAlert,
+            confirmActionTitle: saveActionTitle) { (password) in
+                guard let password = password else {
+                    return
+                }
+                do {
+                    try SecureDeviceStorage
+                        .encryptedStore(password: password, user: self.user)
+                        .save(secret, for: self.secretKey)
+                    self.encryptedStoreContainsValue = true
+                    self.updateUI()
+                } catch {
+                    // TODO: handle failure
+                }
         }
         present(alert, animated: true, completion: nil)
     }
 
     func getFromEncryptedStore() {
-        let alert = alertControllerWithTextField(title: titleForGetAlert,
-                                                 message: messageForGetAlert,
-                                                 confirmActionTitle: getActionTitle) { (password) in
-                                                    guard let pw = password,
-                                                        let value = try? SecureDeviceStorage
-                                                            .encryptedStore(password: pw, user: self.user)
-                                                            .getString(for: self.secretKey)
-                                                        else {
-                                                            return
-                                                    }
-                                                    self.storedInfoLabel.text = "Stored information: \(value)"
-                                                    self.storedInfoLabel.isHidden = false
-                                                    self.encryptedStoreContainsValue = false
-                                                    self.updateUI()
+        let alert = alertControllerWithTextField(
+            title: titleForGetAlert,
+            message: messageForGetAlert,
+            confirmActionTitle: getActionTitle) { (password) in
+                guard let pw = password,
+                    let value = try? SecureDeviceStorage
+                        .encryptedStore(password: pw, user: self.user)
+                        .getString(for: self.secretKey)
+                    else {
+                        return
+                }
+                self.storedInfoLabel.text = "Stored information: \(value)"
+                self.storedInfoLabel.isHidden = false
+                self.encryptedStoreContainsValue = false
+                self.updateUI()
         }
         present(alert, animated: true, completion: nil)
     }
