@@ -1,6 +1,6 @@
 //
 //  KeychainStore.swift
-//  SecureDeviceStorage
+//  SecureKeyStorage
 //
 //  Created by Johannes Steib on 16.03.17.
 //

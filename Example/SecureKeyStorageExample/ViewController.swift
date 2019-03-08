@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     var keychainStoreContainsValue = false
     var encryptedStoreContainsValue = false
 
-    let hasPasscode = SecureDeviceStorage.deviceHasPasscode
+    let hasPasscode = SecureKeyStorage.deviceHasPasscode
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,7 +95,7 @@ class ViewController: UIViewController {
 
     func storeInKeychain(secret: String) {
         do {
-            try SecureDeviceStorage.keychainStore()?.save(secret, for: secretKey)
+            try SecureKeyStorage.keychainStore()?.save(secret, for: secretKey)
             keychainStoreContainsValue = true
             updateUI()
         } catch {
@@ -105,7 +105,7 @@ class ViewController: UIViewController {
 
     func getFromKeychain() {
         DispatchQueue.global().async {
-            let value = try? SecureDeviceStorage
+            let value = try? SecureKeyStorage
                 .keychainStore(authenticationPrompt: self.authenticationPrompt)?
                 .getString(for: self.secretKey)
             DispatchQueue.main.async {
@@ -130,7 +130,7 @@ class ViewController: UIViewController {
                     return
                 }
                 do {
-                    try SecureDeviceStorage
+                    try SecureKeyStorage
                         .encryptedStore(password: password, user: self.user)
                         .save(secret, for: self.secretKey)
                     self.encryptedStoreContainsValue = true
@@ -148,7 +148,7 @@ class ViewController: UIViewController {
             message: messageForGetAlert,
             confirmActionTitle: getActionTitle) { (password) in
                 guard let pw = password,
-                    let value = try? SecureDeviceStorage
+                    let value = try? SecureKeyStorage
                         .encryptedStore(password: pw, user: self.user)
                         .getString(for: self.secretKey)
                     else {

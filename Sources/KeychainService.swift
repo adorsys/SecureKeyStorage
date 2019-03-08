@@ -1,6 +1,6 @@
 //
 //  KeychainService.swift
-//  SecureDeviceStorage
+//  SecureKeyStorage
 //
 //  Created by Johannes Steib on 09.03.17.
 //
@@ -42,16 +42,16 @@ internal class KeychainService {
         if protection {
             var error: Unmanaged<CFError>?
             let protectionRef = kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly as CFTypeRef
-            guard let accessControl = SecAccessControlCreateWithFlags(kCFAllocatorDefault,
-                                                                      protectionRef,
-                                                                      .userPresence,
-                                                                      &error)
+            guard let accessControl = SecAccessControlCreateWithFlags(
+                kCFAllocatorDefault,
+                protectionRef,
+                .userPresence,
+                &error)
                 else {
                     if let error = error?.takeUnretainedValue() {
                         throw error
                     } else {
-                        debugPrint("save: something unexpectedly went wrong")
-                        throw SDSError.unexpectedError
+                        throw SecureKeyStorageError.unexpectedError
                     }
             }
             query[kSecAttrAccessControl as String] = accessControl
@@ -62,8 +62,7 @@ internal class KeychainService {
         query[kSecValueData as String] = data
         let status = SecItemAdd(query as CFDictionary, nil)
         if status != errSecSuccess {
-            debugPrint("save: \(status)")
-            throw SDSError.unhandledError(status: status)
+            throw SecureKeyStorageError.unhandledError(status: status)
         }
     }
 
@@ -88,16 +87,13 @@ internal class KeychainService {
         let status = SecItemCopyMatching(query as CFDictionary, &queryResult)
 
         guard status != errSecItemNotFound else {
-            debugPrint("get: item not found")
-            throw SDSError.itemNotFoundError
+            throw SecureKeyStorageError.itemNotFoundError
         }
         guard status == noErr else {
-            debugPrint("get: unhandled error")
-            throw SDSError.unhandledError(status: status)
+            throw SecureKeyStorageError.unhandledError(status: status)
         }
         guard let data = queryResult as? Data else {
-            debugPrint("get: item not found in result")
-            throw SDSError.itemNotFoundError
+            throw SecureKeyStorageError.itemNotFoundError
         }
         return data
     }
@@ -105,9 +101,9 @@ internal class KeychainService {
     internal func remove(key: String) throws {
         let query = keychainQuery(forKey: key)
         let status = SecItemDelete(query as CFDictionary)
-        if status != errSecSuccess && status != errSecItemNotFound {
-            debugPrint("delete: \(status)")
-            throw SDSError.unhandledError(status: status)
+        if status != errSecSuccess
+            && status != errSecItemNotFound {
+            throw SecureKeyStorageError.unhandledError(status: status)
         }
     }
 
@@ -118,8 +114,9 @@ internal class KeychainService {
         var query = keychainQuery()
         query[kSecMatchLimit as String] = kSecMatchLimitAll
         let status = SecItemDelete(query as CFDictionary)
-        if status != errSecSuccess && status != errSecItemNotFound {
-            throw SDSError.unhandledError(status: status)
+        if status != errSecSuccess
+            && status != errSecItemNotFound {
+            throw SecureKeyStorageError.unhandledError(status: status)
         }
     }
 

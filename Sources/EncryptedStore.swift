@@ -1,6 +1,6 @@
 //
 //  EncryptedStore.swift
-//  Pods
+//  SecureKeyStorage
 //
 //  Created by Johannes Steib on 16.03.17.
 //

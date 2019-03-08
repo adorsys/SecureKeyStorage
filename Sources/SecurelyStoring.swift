@@ -1,6 +1,6 @@
 //
 //  SecurelyStoring.swift
-//  SecureDeviceStorage
+//  SecureKeyStorage
 //
 //  Created by Johannes Steib on 16.03.17.
 //
@@ -54,17 +54,17 @@ public protocol SecurelyStoring {
 extension SecurelyStoring {
     public func save(_ string: String, for key: String) throws {
         guard let data = string.data(using: .utf8) else {
-            throw SDSError.stringConversionError
+            throw SecureKeyStorageError.stringConversionError
         }
         try save(data, for: key)
     }
 
     public func getString(for key: String) throws -> String {
         guard let data = try? getData(for: key) else {
-            throw SDSError.itemNotFoundError
+            throw SecureKeyStorageError.itemNotFoundError
         }
         guard let string = String(data: data, encoding: .utf8) else {
-            throw SDSError.stringConversionError
+            throw SecureKeyStorageError.stringConversionError
         }
         return string
     }

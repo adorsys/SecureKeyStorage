@@ -1,6 +1,6 @@
 //
 //  SecureDeviceStorage.swift
-//  SecureDeviceStorage
+//  SecureKeyStorage
 //
 //  Created by Johannes Steib on 08.03.17.
 //
@@ -8,7 +8,7 @@
 
 import LocalAuthentication
 
-public enum SDSError: Error {
+public enum SecureKeyStorageError: Error {
     case stringConversionError
     case unhandledError(status: OSStatus)
     case unexpectedError
@@ -17,7 +17,7 @@ public enum SDSError: Error {
 }
 
 /// Main class of the pod
-public enum SecureDeviceStorage {
+public enum SecureKeyStorage {
 
     /// A Boolean value indicating if the device is secured with a passcode.
     /// If the device has a passcode set the keychain is encrypted and can be

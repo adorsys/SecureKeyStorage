@@ -1,6 +1,6 @@
 //
 //  EncryptedStorageService.swift
-//  SecureDeviceStorage
+//  SecureKeyStorage
 //
 //  Created by Johannes Steib on 10.03.17.
 //
@@ -45,7 +45,7 @@ internal class EncryptedStorageService {
             let encryptedData = encrypt(data, with: encryptionKey, hmac: hmacKey)
             try keychain.save(encryptedData, for: key, withUserPresence: false)
         } catch {
-            throw SDSError.couldNotSaveItemError
+            throw SecureKeyStorageError.couldNotSaveItemError
         }
     }
 
