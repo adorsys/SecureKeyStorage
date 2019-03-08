@@ -1,5 +1,5 @@
 //
-//  SecureKeyError.swift
+//  SecureKeyStorageError.swift
 //  SecureKeyStorage
 //
 //  Created by Felizia Bernutz on 08.03.19.

@@ -8,14 +8,6 @@
 
 import LocalAuthentication
 
-public enum SecureKeyStorageError: Error {
-    case stringConversionError
-    case unhandledError(status: OSStatus)
-    case unexpectedError
-    case itemNotFoundError
-    case couldNotSaveItemError
-}
-
 /// Main class of the pod
 public enum SecureKeyStorage {
 
