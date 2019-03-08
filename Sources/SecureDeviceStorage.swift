@@ -6,6 +6,8 @@
 //
 //
 
+import LocalAuthentication
+
 public enum SDSError: Error {
     case stringConversionError
     case unhandledError(status: OSStatus)
@@ -14,10 +16,8 @@ public enum SDSError: Error {
     case couldNotSaveItemError
 }
 
-import LocalAuthentication
-
 /// Main class of the pod
-public final class SecureDeviceStorage {
+public enum SecureDeviceStorage {
 
     /// A Boolean value indicating if the device is secured with a passcode.
     /// If the device has a passcode set the keychain is encrypted and can be
@@ -52,7 +52,8 @@ public final class SecureDeviceStorage {
     ///   - user: A username that the data is related to.
     /// - Returns: An `EncryptedStore` object.
     public static func encryptedStore(name: String = defaultServiceName,
-                                      password: String, user: String) -> EncryptedStore {
+                                      password: String,
+                                      user: String) -> EncryptedStore {
         return EncryptedStore(service: name, user: user, password: password)
     }
 

@@ -128,7 +128,7 @@ internal class KeychainService {
     ///
     /// - Parameter key: A key that is used for the keychain query.
     /// - Returns: A query dictionary.
-    private func keychainQuery(forKey key: String? = nil) -> [String : Any] {
+    private func keychainQuery(forKey key: String? = nil) -> [String: Any] {
         var query = [String: Any]()
         query[kSecClass as String] = kSecClassGenericPassword
         query[kSecAttrService as String] = service

@@ -135,7 +135,6 @@ internal class EncryptedStorageService {
         return encryptor.encrypt(data: data)
     }
 
-
     /// Encrypts data with a password.
     ///
     /// - Parameters:
@@ -147,7 +146,7 @@ internal class EncryptedStorageService {
         let (hmacSalt, hmacKey) = randomSaltAndKey(for: password)
         let encryptor = RNCryptor.EncryptorV3(encryptionKey: encryptionKey, hmacKey: hmacKey)
 
-        var ciphertext =  Data(encryptionSalt)
+        var ciphertext = Data(encryptionSalt)
         ciphertext.append(hmacSalt)
         ciphertext.append(encryptor.encrypt(data: data))
         return ciphertext

@@ -269,7 +269,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect --config .swiftlint.yml\n\"${PODS_ROOT}/SwiftLint/swiftlint\" lint --config .swiftlint.yml\n";
 		};
 		9EB48B1BC6C2F7B1C7089D02 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -480,7 +480,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 01282CD88E2624A47AD8CC53 /* Pods-SecureKeyStorageExample.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FCNMCC2Y82;
 				INFOPLIST_FILE = SecureKeyStorageExample/Info.plist;
@@ -495,7 +494,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C3E40CCE9CB4D5384618D2EB /* Pods-SecureKeyStorageExample.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FCNMCC2Y82;
 				INFOPLIST_FILE = SecureKeyStorageExample/Info.plist;

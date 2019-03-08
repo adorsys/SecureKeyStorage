@@ -1,7 +1,11 @@
+platform :ios, '10.2'
 use_frameworks!
+inhibit_all_warnings!
 
 target 'SecureKeyStorageExample' do
   pod 'SecureKeyStorage', :path => '..'
+
+  pod 'SwiftLint'
 
   target 'SecureKeyStorageExampleTests' do
       inherit! :search_paths
