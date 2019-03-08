@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import SecureDeviceStorage
+@testable import SecureKeyStorage
 
 class ADSecureDeviceStorageTests: XCTestCase {
 

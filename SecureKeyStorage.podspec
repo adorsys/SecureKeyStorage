@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = 'SecureDeviceStorage'
+  s.name = 'SecureKeyStorage'
   s.version = '0.1.0'
   s.license = { :type => 'Apache', :file => 'LICENSE' }
   s.summary = 'Library for storing sensitive data securely on iOS devices.'

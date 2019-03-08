@@ -1,11 +1,9 @@
-target 'ADSecureDeviceStorage Example' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+use_frameworks!
 
-  pod 'SecureDeviceStorage', :path => '..'
+target 'SecureKeyStorageExample' do
+  pod 'SecureKeyStorage', :path => '..'
 
-  target 'ADSecureDeviceStorageTests' do
+  target 'SecureKeyStorageExampleTests' do
       inherit! :search_paths
   end
-
 end

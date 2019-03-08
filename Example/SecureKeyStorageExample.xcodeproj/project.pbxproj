@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3206D52AA67EFD1C0F1802A3 /* Pods_ADSecureDeviceStorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC67A0A92FD8B611C2DB4C47 /* Pods_ADSecureDeviceStorageTests.framework */; };
+		83128C25751D16649FD4AA4F /* Pods_SecureKeyStorageExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E08B5B1A1AC7E02B082187C /* Pods_SecureKeyStorageExample.framework */; };
 		87407E591E705F3F0040A66C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87407E581E705F3F0040A66C /* AppDelegate.swift */; };
 		87407E5B1E705F3F0040A66C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87407E5A1E705F3F0040A66C /* ViewController.swift */; };
 		87407E5E1E705F3F0040A66C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87407E5C1E705F3F0040A66C /* Main.storyboard */; };
 		87407E601E705F3F0040A66C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87407E5F1E705F3F0040A66C /* Assets.xcassets */; };
 		87407E631E705F3F0040A66C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87407E611E705F3F0040A66C /* LaunchScreen.storyboard */; };
 		87BD43CA1E72EA5900AB54FF /* ADSecureDeviceStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD43C91E72EA5900AB54FF /* ADSecureDeviceStorageTests.swift */; };
-		881F3EA56099693C1E040B8B /* Pods_ADSecureDeviceStorage_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38156DD18EF3A3990B5B7872 /* Pods_ADSecureDeviceStorage_Example.framework */; };
+		D27FC743D9C4DD4857572548 /* Pods_SecureKeyStorageExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01606941BF8F07A5F04F56E /* Pods_SecureKeyStorageExampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,23 +28,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		38156DD18EF3A3990B5B7872 /* Pods_ADSecureDeviceStorage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADSecureDeviceStorage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		834076B044A46101EFD25C47 /* Pods-ADSecureDeviceStorage Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADSecureDeviceStorage Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ADSecureDeviceStorage Example/Pods-ADSecureDeviceStorage Example.release.xcconfig"; sourceTree = "<group>"; };
-		87407E551E705F3F0040A66C /* ADSecureDeviceStorage Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ADSecureDeviceStorage Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01282CD88E2624A47AD8CC53 /* Pods-SecureKeyStorageExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureKeyStorageExample.debug.xcconfig"; path = "Target Support Files/Pods-SecureKeyStorageExample/Pods-SecureKeyStorageExample.debug.xcconfig"; sourceTree = "<group>"; };
+		1E08B5B1A1AC7E02B082187C /* Pods_SecureKeyStorageExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureKeyStorageExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B8899E9E0D49ACDE499E32B /* Pods-SecureKeyStorageExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureKeyStorageExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-SecureKeyStorageExampleTests/Pods-SecureKeyStorageExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87407E551E705F3F0040A66C /* SecureKeyStorageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureKeyStorageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87407E581E705F3F0040A66C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87407E5A1E705F3F0040A66C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87407E5D1E705F3F0040A66C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87407E5F1E705F3F0040A66C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87407E621E705F3F0040A66C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87407E641E705F3F0040A66C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87BD43691E72DCCB00AB54FF /* Pods_ADSecureDeviceStorage_Example.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ADSecureDeviceStorage_Example.framework; path = "Pods/../build/Debug-iphoneos/Pods_ADSecureDeviceStorage_Example.framework"; sourceTree = "<group>"; };
-		87BD43C71E72EA5900AB54FF /* ADSecureDeviceStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADSecureDeviceStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87BD43C71E72EA5900AB54FF /* SecureKeyStorageExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureKeyStorageExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BD43C91E72EA5900AB54FF /* ADSecureDeviceStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADSecureDeviceStorageTests.swift; sourceTree = "<group>"; };
 		87BD43CB1E72EA5900AB54FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6F4357344CA570B8469E1DF /* Pods-ADSecureDeviceStorage Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADSecureDeviceStorage Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ADSecureDeviceStorage Example/Pods-ADSecureDeviceStorage Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CC67A0A92FD8B611C2DB4C47 /* Pods_ADSecureDeviceStorageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADSecureDeviceStorageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAA3D8657C06576C16DAD457 /* Pods-ADSecureDeviceStorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADSecureDeviceStorageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ADSecureDeviceStorageTests/Pods-ADSecureDeviceStorageTests.release.xcconfig"; sourceTree = "<group>"; };
-		EF95989964004AD6D0E9A316 /* Pods-ADSecureDeviceStorageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADSecureDeviceStorageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ADSecureDeviceStorageTests/Pods-ADSecureDeviceStorageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB593727765F20F6D7887CBA /* Pods-SecureKeyStorageExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureKeyStorageExampleTests.release.xcconfig"; path = "Target Support Files/Pods-SecureKeyStorageExampleTests/Pods-SecureKeyStorageExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3E40CCE9CB4D5384618D2EB /* Pods-SecureKeyStorageExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureKeyStorageExample.release.xcconfig"; path = "Target Support Files/Pods-SecureKeyStorageExample/Pods-SecureKeyStorageExample.release.xcconfig"; sourceTree = "<group>"; };
+		E01606941BF8F07A5F04F56E /* Pods_SecureKeyStorageExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureKeyStorageExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881F3EA56099693C1E040B8B /* Pods_ADSecureDeviceStorage_Example.framework in Frameworks */,
+				83128C25751D16649FD4AA4F /* Pods_SecureKeyStorageExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,19 +59,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3206D52AA67EFD1C0F1802A3 /* Pods_ADSecureDeviceStorageTests.framework in Frameworks */,
+				D27FC743D9C4DD4857572548 /* Pods_SecureKeyStorageExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18B07C841D24EBC34329F2FE /* Frameworks */ = {
+		2A1C7BB6DCF917C4E022ADC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				87BD43691E72DCCB00AB54FF /* Pods_ADSecureDeviceStorage_Example.framework */,
-				38156DD18EF3A3990B5B7872 /* Pods_ADSecureDeviceStorage_Example.framework */,
-				CC67A0A92FD8B611C2DB4C47 /* Pods_ADSecureDeviceStorageTests.framework */,
+				1E08B5B1A1AC7E02B082187C /* Pods_SecureKeyStorageExample.framework */,
+				E01606941BF8F07A5F04F56E /* Pods_SecureKeyStorageExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,24 +78,24 @@
 		87407E4C1E705F3F0040A66C = {
 			isa = PBXGroup;
 			children = (
-				87407E571E705F3F0040A66C /* ADSecureDeviceStorage Example */,
-				87BD43C81E72EA5900AB54FF /* ADSecureDeviceStorageTests */,
+				87407E571E705F3F0040A66C /* SecureKeyStorageExample */,
+				87BD43C81E72EA5900AB54FF /* SecureKeyStorageExampleTests */,
 				87407E561E705F3F0040A66C /* Products */,
-				96526CD4A9507B9473FE2FF2 /* Pods */,
-				18B07C841D24EBC34329F2FE /* Frameworks */,
+				DD3333A38C208DD9319D0078 /* Pods */,
+				2A1C7BB6DCF917C4E022ADC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		87407E561E705F3F0040A66C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87407E551E705F3F0040A66C /* ADSecureDeviceStorage Example.app */,
-				87BD43C71E72EA5900AB54FF /* ADSecureDeviceStorageTests.xctest */,
+				87407E551E705F3F0040A66C /* SecureKeyStorageExample.app */,
+				87BD43C71E72EA5900AB54FF /* SecureKeyStorageExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		87407E571E705F3F0040A66C /* ADSecureDeviceStorage Example */ = {
+		87407E571E705F3F0040A66C /* SecureKeyStorageExample */ = {
 			isa = PBXGroup;
 			children = (
 				87407E581E705F3F0040A66C /* AppDelegate.swift */,
@@ -107,72 +105,69 @@
 				87407E611E705F3F0040A66C /* LaunchScreen.storyboard */,
 				87407E641E705F3F0040A66C /* Info.plist */,
 			);
-			path = "ADSecureDeviceStorage Example";
+			path = SecureKeyStorageExample;
 			sourceTree = "<group>";
 		};
-		87BD43C81E72EA5900AB54FF /* ADSecureDeviceStorageTests */ = {
+		87BD43C81E72EA5900AB54FF /* SecureKeyStorageExampleTests */ = {
 			isa = PBXGroup;
 			children = (
 				87BD43C91E72EA5900AB54FF /* ADSecureDeviceStorageTests.swift */,
 				87BD43CB1E72EA5900AB54FF /* Info.plist */,
 			);
-			path = ADSecureDeviceStorageTests;
+			path = SecureKeyStorageExampleTests;
 			sourceTree = "<group>";
 		};
-		96526CD4A9507B9473FE2FF2 /* Pods */ = {
+		DD3333A38C208DD9319D0078 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				834076B044A46101EFD25C47 /* Pods-ADSecureDeviceStorage Example.release.xcconfig */,
-				A6F4357344CA570B8469E1DF /* Pods-ADSecureDeviceStorage Example.debug.xcconfig */,
-				EF95989964004AD6D0E9A316 /* Pods-ADSecureDeviceStorageTests.debug.xcconfig */,
-				EAA3D8657C06576C16DAD457 /* Pods-ADSecureDeviceStorageTests.release.xcconfig */,
+				01282CD88E2624A47AD8CC53 /* Pods-SecureKeyStorageExample.debug.xcconfig */,
+				C3E40CCE9CB4D5384618D2EB /* Pods-SecureKeyStorageExample.release.xcconfig */,
+				3B8899E9E0D49ACDE499E32B /* Pods-SecureKeyStorageExampleTests.debug.xcconfig */,
+				BB593727765F20F6D7887CBA /* Pods-SecureKeyStorageExampleTests.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		87407E541E705F3F0040A66C /* ADSecureDeviceStorage Example */ = {
+		87407E541E705F3F0040A66C /* SecureKeyStorageExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87407E671E705F3F0040A66C /* Build configuration list for PBXNativeTarget "ADSecureDeviceStorage Example" */;
+			buildConfigurationList = 87407E671E705F3F0040A66C /* Build configuration list for PBXNativeTarget "SecureKeyStorageExample" */;
 			buildPhases = (
-				0665AE5D43F00FC3458B2D7B /* [CP] Check Pods Manifest.lock */,
+				C3909F487BB4406D127CF54F /* [CP] Check Pods Manifest.lock */,
 				87AAB5711EBB24E700E53D23 /* swiftlint */,
 				87407E511E705F3F0040A66C /* Sources */,
 				87407E521E705F3F0040A66C /* Frameworks */,
 				87407E531E705F3F0040A66C /* Resources */,
-				72F909347E0E697DB071BF82 /* [CP] Embed Pods Frameworks */,
-				6102E937880861DD98D3D66E /* [CP] Copy Pods Resources */,
+				9EB48B1BC6C2F7B1C7089D02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "ADSecureDeviceStorage Example";
+			name = SecureKeyStorageExample;
 			productName = "ADSecureDeviceStorage Example";
-			productReference = 87407E551E705F3F0040A66C /* ADSecureDeviceStorage Example.app */;
+			productReference = 87407E551E705F3F0040A66C /* SecureKeyStorageExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		87BD43C61E72EA5900AB54FF /* ADSecureDeviceStorageTests */ = {
+		87BD43C61E72EA5900AB54FF /* SecureKeyStorageExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87BD43CE1E72EA5900AB54FF /* Build configuration list for PBXNativeTarget "ADSecureDeviceStorageTests" */;
+			buildConfigurationList = 87BD43CE1E72EA5900AB54FF /* Build configuration list for PBXNativeTarget "SecureKeyStorageExampleTests" */;
 			buildPhases = (
-				E5D37523DE01C0D884AE62A1 /* [CP] Check Pods Manifest.lock */,
+				4D19A777BBCDBDA8A7F39E99 /* [CP] Check Pods Manifest.lock */,
 				87BD43C31E72EA5900AB54FF /* Sources */,
 				87BD43C41E72EA5900AB54FF /* Frameworks */,
 				87BD43C51E72EA5900AB54FF /* Resources */,
-				98D1812F38A2DB38ECAA260F /* [CP] Embed Pods Frameworks */,
-				F0B43010AF048AE3A1381E13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				87BD43D01E72EADB00AB54FF /* PBXTargetDependency */,
 			);
-			name = ADSecureDeviceStorageTests;
+			name = SecureKeyStorageExampleTests;
 			productName = ADSecureDeviceStorageTests;
-			productReference = 87BD43C71E72EA5900AB54FF /* ADSecureDeviceStorageTests.xctest */;
+			productReference = 87BD43C71E72EA5900AB54FF /* SecureKeyStorageExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +177,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "adorsys GmbH & Co KG";
 				TargetAttributes = {
 					87407E541E705F3F0040A66C = {
@@ -200,7 +195,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 87407E501E705F3F0040A66C /* Build configuration list for PBXProject "ADSecureDeviceStorage Example" */;
+			buildConfigurationList = 87407E501E705F3F0040A66C /* Build configuration list for PBXProject "SecureKeyStorageExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -213,8 +208,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87407E541E705F3F0040A66C /* ADSecureDeviceStorage Example */,
-				87BD43C61E72EA5900AB54FF /* ADSecureDeviceStorageTests */,
+				87407E541E705F3F0040A66C /* SecureKeyStorageExample */,
+				87BD43C61E72EA5900AB54FF /* SecureKeyStorageExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,57 +235,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0665AE5D43F00FC3458B2D7B /* [CP] Check Pods Manifest.lock */ = {
+		4D19A777BBCDBDA8A7F39E99 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ADSecureDeviceStorage Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SecureKeyStorageExampleTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6102E937880861DD98D3D66E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADSecureDeviceStorage Example/Pods-ADSecureDeviceStorage Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		72F909347E0E697DB071BF82 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ADSecureDeviceStorage Example/Pods-ADSecureDeviceStorage Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
-				"${BUILT_PRODUCTS_DIR}/SecureDeviceStorage/SecureDeviceStorage.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SecureDeviceStorage.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADSecureDeviceStorage Example/Pods-ADSecureDeviceStorage Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		87AAB5711EBB24E700E53D23 /* swiftlint */ = {
@@ -307,52 +271,50 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		98D1812F38A2DB38ECAA260F /* [CP] Embed Pods Frameworks */ = {
+		9EB48B1BC6C2F7B1C7089D02 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecureKeyStorageExample/Pods-SecureKeyStorageExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
+				"${BUILT_PRODUCTS_DIR}/SecureKeyStorage/SecureKeyStorage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SecureKeyStorage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADSecureDeviceStorageTests/Pods-ADSecureDeviceStorageTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SecureKeyStorageExample/Pods-SecureKeyStorageExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E5D37523DE01C0D884AE62A1 /* [CP] Check Pods Manifest.lock */ = {
+		C3909F487BB4406D127CF54F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ADSecureDeviceStorageTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SecureKeyStorageExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0B43010AF048AE3A1381E13 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADSecureDeviceStorageTests/Pods-ADSecureDeviceStorageTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -380,7 +342,7 @@
 /* Begin PBXTargetDependency section */
 		87BD43D01E72EADB00AB54FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 87407E541E705F3F0040A66C /* ADSecureDeviceStorage Example */;
+			target = 87407E541E705F3F0040A66C /* SecureKeyStorageExample */;
 			targetProxy = 87BD43CF1E72EADB00AB54FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -418,6 +380,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -425,6 +388,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -474,6 +438,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -481,6 +446,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -512,14 +478,14 @@
 		};
 		87407E681E705F3F0040A66C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6F4357344CA570B8469E1DF /* Pods-ADSecureDeviceStorage Example.debug.xcconfig */;
+			baseConfigurationReference = 01282CD88E2624A47AD8CC53 /* Pods-SecureKeyStorageExample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FCNMCC2Y82;
-				INFOPLIST_FILE = "ADSecureDeviceStorage Example/Info.plist";
+				INFOPLIST_FILE = SecureKeyStorageExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.adorsys.ADSecureDeviceStorage-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = de.adorsys.SecureKeyStorageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -528,14 +494,14 @@
 		};
 		87407E691E705F3F0040A66C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 834076B044A46101EFD25C47 /* Pods-ADSecureDeviceStorage Example.release.xcconfig */;
+			baseConfigurationReference = C3E40CCE9CB4D5384618D2EB /* Pods-SecureKeyStorageExample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FCNMCC2Y82;
-				INFOPLIST_FILE = "ADSecureDeviceStorage Example/Info.plist";
+				INFOPLIST_FILE = SecureKeyStorageExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.adorsys.ADSecureDeviceStorage-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = de.adorsys.SecureKeyStorageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -544,38 +510,38 @@
 		};
 		87BD43CC1E72EA5900AB54FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF95989964004AD6D0E9A316 /* Pods-ADSecureDeviceStorageTests.debug.xcconfig */;
+			baseConfigurationReference = 3B8899E9E0D49ACDE499E32B /* Pods-SecureKeyStorageExampleTests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = FCNMCC2Y82;
-				INFOPLIST_FILE = ADSecureDeviceStorageTests/Info.plist;
+				INFOPLIST_FILE = SecureKeyStorageExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.adorsys.ADSecureDeviceStorageTests;
+				PRODUCT_BUNDLE_IDENTIFIER = de.adorsys.SecureKeyStorageExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADSecureDeviceStorage Example.app/ADSecureDeviceStorage Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureKeyStorageExample.app/SecureKeyStorageExample";
 			};
 			name = Debug;
 		};
 		87BD43CD1E72EA5900AB54FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAA3D8657C06576C16DAD457 /* Pods-ADSecureDeviceStorageTests.release.xcconfig */;
+			baseConfigurationReference = BB593727765F20F6D7887CBA /* Pods-SecureKeyStorageExampleTests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = FCNMCC2Y82;
-				INFOPLIST_FILE = ADSecureDeviceStorageTests/Info.plist;
+				INFOPLIST_FILE = SecureKeyStorageExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.adorsys.ADSecureDeviceStorageTests;
+				PRODUCT_BUNDLE_IDENTIFIER = de.adorsys.SecureKeyStorageExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADSecureDeviceStorage Example.app/ADSecureDeviceStorage Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureKeyStorageExample.app/SecureKeyStorageExample";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		87407E501E705F3F0040A66C /* Build configuration list for PBXProject "ADSecureDeviceStorage Example" */ = {
+		87407E501E705F3F0040A66C /* Build configuration list for PBXProject "SecureKeyStorageExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87407E651E705F3F0040A66C /* Debug */,
@@ -584,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87407E671E705F3F0040A66C /* Build configuration list for PBXNativeTarget "ADSecureDeviceStorage Example" */ = {
+		87407E671E705F3F0040A66C /* Build configuration list for PBXNativeTarget "SecureKeyStorageExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87407E681E705F3F0040A66C /* Debug */,
@@ -593,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87BD43CE1E72EA5900AB54FF /* Build configuration list for PBXNativeTarget "ADSecureDeviceStorageTests" */ = {
+		87BD43CE1E72EA5900AB54FF /* Build configuration list for PBXNativeTarget "SecureKeyStorageExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87BD43CC1E72EA5900AB54FF /* Debug */,

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SecureDeviceStorage
+import SecureKeyStorage
 
 class ViewController: UIViewController {
 
