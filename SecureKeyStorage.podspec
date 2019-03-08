@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = 'SecureKeyStorage'
   s.version = '0.1.0'
-  s.license = { :type => 'Apache', :file => 'LICENSE' }
+  s.license = { :type => 'Apache License 2.0', :file => 'LICENSE' }
   s.summary = 'Library for storing sensitive data securely on iOS devices.'
   s.homepage = 'https://github.com/adorsys/secure-banking-ios'
   s.author = { 'adorsys GmbH & Co. KG' => 'dev.team.ios@adorsys.de' }
