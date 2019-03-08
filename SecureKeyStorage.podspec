@@ -13,11 +13,12 @@ Pod::Spec.new do |s|
   # Platform setup
   s.requires_arc = true
   s.ios.deployment_target = '9.0'
-  s.source_files = 'Sources/**/*.{swift}'
+  s.source_files = 'Sources/Classes/**/*'
+  s.swift_version = '4.2'
 
   # Dependencies
   s.dependency 'RNCryptor', '~> 5.0'
-  
+
   s.test_spec 'Tests' do |test_spec|
     test_spec.source_files = 'Tests/*.swift'
   end

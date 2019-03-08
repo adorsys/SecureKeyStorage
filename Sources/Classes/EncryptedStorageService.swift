@@ -173,10 +173,10 @@ internal class EncryptedStorageService {
     /// - Returns: The decrypted data.
     /// - Throws: An error if the decryption failed.
     private func decrypt(_ data: Data, with password: String) throws -> Data {
-        let encryptionSaltRange = Range(0 ..< RNCryptor.FormatV3.saltSize)
+        let encryptionSaltRange = 0 ..< RNCryptor.FormatV3.saltSize
         let hmacSaltRangeUpperBound = encryptionSaltRange.upperBound + RNCryptor.FormatV3.saltSize
-        let hmacSaltRange = Range(encryptionSaltRange.upperBound ..< hmacSaltRangeUpperBound)
-        let bodyRange = Range(hmacSaltRange.upperBound ..< data.count)
+        let hmacSaltRange = encryptionSaltRange.upperBound ..< hmacSaltRangeUpperBound
+        let bodyRange = hmacSaltRange.upperBound ..< data.count
 
         let encryptionSalt = data.subdata(in: encryptionSaltRange)
         let hmacSalt = data.subdata(in: hmacSaltRange)

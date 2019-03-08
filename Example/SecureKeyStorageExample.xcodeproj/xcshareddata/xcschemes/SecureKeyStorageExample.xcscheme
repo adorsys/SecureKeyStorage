@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "87BD43C61E72EA5900AB54FF"
-               BuildableName = "SecureKeyStorageExampleTests.xctest"
-               BlueprintName = "SecureKeyStorageExampleTests"
-               ReferencedContainer = "container:SecureKeyStorageExample.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

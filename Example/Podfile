@@ -6,8 +6,4 @@ target 'SecureKeyStorageExample' do
   pod 'SecureKeyStorage', :path => '..'
 
   pod 'SwiftLint'
-
-  target 'SecureKeyStorageExampleTests' do
-      inherit! :search_paths
-  end
 end

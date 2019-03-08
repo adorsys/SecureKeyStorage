@@ -9,7 +9,7 @@
 import XCTest
 @testable import SecureKeyStorage
 
-class ADSecureDeviceStorageTests: XCTestCase {
+class SecureKeyStorageTests: XCTestCase {
 
     private let serviceName = "EncryptedStorageServiceTests"
     var service: EncryptedStorageService!
