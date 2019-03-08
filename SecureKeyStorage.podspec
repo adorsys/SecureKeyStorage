@@ -17,5 +17,8 @@ Pod::Spec.new do |s|
 
   # Dependencies
   s.dependency 'RNCryptor', '~> 5.0'
-
+  
+  s.test_spec 'Tests' do |test_spec|
+    test_spec.source_files = 'Tests/*.swift'
+  end
 end
