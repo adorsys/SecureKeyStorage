@@ -6,6 +6,8 @@
 //
 //
 
+import Foundation
+
 /// Saves data to and retrieves it from the keychain.
 public class KeychainStore: SecurelyStoring {
     /// The service that does the actual operations on the keychain.

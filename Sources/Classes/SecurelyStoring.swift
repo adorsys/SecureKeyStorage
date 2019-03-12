@@ -6,6 +6,8 @@
 //
 //
 
+import Foundation
+
 /// A type that represents a secure data store.
 public protocol SecurelyStoring {
 

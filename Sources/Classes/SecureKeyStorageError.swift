@@ -5,6 +5,8 @@
 //  Created by Felizia Bernutz on 08.03.19.
 //
 
+import Foundation
+
 public enum SecureKeyStorageError: Error {
     case stringConversionError
     case unhandledError(status: OSStatus)

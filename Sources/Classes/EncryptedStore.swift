@@ -6,6 +6,8 @@
 //
 //
 
+import Foundation
+
 /// Saves and retrieves data that is encrypted with a password.
 public class EncryptedStore: SecurelyStoring {
     /// The service that does the actual encryption and decryption operations.

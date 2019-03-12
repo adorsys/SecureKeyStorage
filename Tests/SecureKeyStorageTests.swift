@@ -18,8 +18,14 @@ class SecureKeyStorageTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        service = EncryptedStorageService(service: serviceName, password: "password", user: "user")
-        anotherService = EncryptedStorageService(service: serviceName, password: "geheim", user: "benutzer")
+        service = EncryptedStorageService(
+            service: serviceName,
+            password: "password",
+            user: "user")
+        anotherService = EncryptedStorageService(
+            service: serviceName,
+            password: "geheim",
+            user: "benutzer")
     }
 
     override func tearDown() {
