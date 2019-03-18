@@ -1,4 +1,41 @@
-# Secure Key Storage - iOS
+# SecureKeyStorage - iOS
+
+[![Build Status](https://travis-ci.com/adorsys/SecureKeyStorage.svg?branch=master)](https://travis-ci.com/adorsys/SecureKeyStorage.svg?branch=master)
+[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg)](https://swift.org)
+[![license](https://img.shields.io/badge/license-Apache_2.0-lightgrey.svg)](https://github.com/adorsys/SecureKeyStorage/blob/master/LICENSE)
+[![platform](https://img.shields.io/badge/platform-iOS_9+-lightgrey.svg)](https://img.shields.io/badge/platform-iOS_9+-lightgrey.svg)
+
+SecureKeyStorage – a pod for storing sensitive data securely on iOS devices.
+
+- [Requirements](#requirements)
+- [Installation](#installation)
+  - [CocoaPods](#cocoapods)
+- [Introduction](#introduction)
+  - [Keychain Security (Device Passcode required)](#keychain-security-device-passcode-required)
+  - [Secure Storage without Device Passcode](#secure-storage-without-device-passcode)
+- [Usage](#usage)
+  - [Keychain Store](#keychain-store)
+    - [Save String](#save-string)
+    - [Obtain String](#obtain-string)
+  - [Encrypted Store](#encrypted-store)
+    - [Save Data](#save-data)
+    - [Obtain Data](#obtain-data)
+- [Further reading](#further-reading)
+- [License](#license)
+
+## Requirements
+- iOS 9.0 SDK or later
+
+## Installation
+
+### CocoaPods
+
+SecureKeyStorage is available through [CocoaPods](http://cocoapods.org).
+To install it, simply add the following line to your `Podfile`:
+
+```ruby
+pod 'SecureKeyStorage', :git => 'https://github.com/adorsys/SecureKeyStorage.git'
+```
 
 ## Introduction
 
@@ -22,7 +59,7 @@ To encrypt sensitive data on devices that are not secured by a passcode a random
 
 ## Usage
 
-It is possible to store `String` and `Data`.
+It is possible to store `String` and `Data`. You can access all features with `import SecureKeyStorage`.
 
 ### Keychain Store
 
@@ -31,8 +68,8 @@ How to use a keychain store with user presence protected items.
 #### Save String
 
 ```swift
-let keychainStore = SecureDeviceStorage.keychainStore()
-try? keychainStore.save("Secret Token", for: "secretTokenKey")
+let keychainStore = SecureKeyStorage.keychainStore()
+try? keychainStore?.save("Secret Token", for: "secretTokenKey")
 ```
 
 #### Obtain String
@@ -41,7 +78,8 @@ This operation requires an authentication of the user. Thus is must be run on a 
 
 ```swift
 DispatchQueue.global().async {
-  let secret = try? keychainStore.getString(for: "secretTokenKey")
+  let keychainStore = SecureKeyStorage.keychainStore()
+  let secret = try? keychainStore?.getString(for: "secretTokenKey")
 }
 ```
 
@@ -49,18 +87,19 @@ DispatchQueue.global().async {
 
 How use the encrypted store to protect items by a password.
 
-#### Save
+#### Save Data
 
 ```swift
-let secureStore = SecureDeviceStorage.encryptedStore(password: "geheim", user: "username")
+let secureStore = SecureKeyStorage.encryptedStore(password: "geheim", user: "username")
 if let data = "Secret Token".data(using: .utf8) {
   try? secureStore.save(data, for: "secretTokenKey")
 }
 ```
 
-#### Obtain
+#### Obtain Data
 
 ```swift
+let secureStore = SecureKeyStorage.encryptedStore(password: "geheim", user: "username")
 let data = try? secureStore.getData(for: "secretTokenKey")
 ```
 
@@ -74,3 +113,7 @@ https://developer.apple.com/videos/play/wwdc2016/705/
 https://developer.apple.com/library/content/documentation/Security/Conceptual/keychainServConcepts/02concepts/concepts.html
 - RNCryptor framework:
 https://github.com/RNCryptor/RNCryptor
+
+## License
+
+SecureKeyStorage is released under the **Apache 2.0 License**. Please see the [LICENSE](https://github.com/adorsys/SecureKeyStorage/blob/master/LICENSE) file for more information.
