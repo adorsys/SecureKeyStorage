@@ -5,3 +5,7 @@ inhibit_all_warnings!
 target 'SecureKeyStorage' do
   pod 'RNCryptor', '~> 5.0'
 end
+
+target 'SecureKeyStorageTests' do 
+  inherit! :search_paths
+end

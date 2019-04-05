@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
   s.version = '0.1.0'
   s.license = { :type => 'Apache License 2.0', :file => 'LICENSE' }
   s.summary = 'Library for storing sensitive data securely on iOS devices.'
-  s.homepage = 'https://github.com/adorsys/secure-banking-ios'
+  s.homepage = 'https://github.com/adorsys/SecureKeyStorage'
   s.author = { 'adorsys GmbH & Co. KG' => 'dev.team.ios@adorsys.de' }
   s.source = {
-    :git => 'https://github.com/adorsys/secure-banking-ios.git',
+    :git => 'https://github.com/adorsys/SecureKeyStorage.git',
     :tag => s.version.to_s
   }
 
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.ios.deployment_target = '9.0'
   s.source_files = 'Sources/Classes/**/*'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
   # Dependencies
   s.dependency 'RNCryptor', '~> 5.0'

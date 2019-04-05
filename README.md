@@ -1,7 +1,7 @@
 # SecureKeyStorage - iOS
 
 [![Build Status](https://travis-ci.com/adorsys/SecureKeyStorage.svg?branch=master)](https://travis-ci.com/adorsys/SecureKeyStorage.svg?branch=master)
-[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg)](https://swift.org)
+[![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
 [![license](https://img.shields.io/badge/license-Apache_2.0-lightgrey.svg)](https://github.com/adorsys/SecureKeyStorage/blob/master/LICENSE)
 [![platform](https://img.shields.io/badge/platform-iOS_9+-lightgrey.svg)](https://img.shields.io/badge/platform-iOS_9+-lightgrey.svg)
 

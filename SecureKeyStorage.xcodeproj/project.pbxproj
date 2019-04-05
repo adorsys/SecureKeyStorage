@@ -18,6 +18,7 @@
 		3F3D9BFB2232BE5100D1B804 /* SecureKeyStorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D9BF42232BE5100D1B804 /* SecureKeyStorageError.swift */; };
 		3F3D9BFD2233CCA200D1B804 /* RNCryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3D9BFC2233CCA200D1B804 /* RNCryptor.framework */; };
 		5D51DC73E6C99EE25D5C5FC7 /* Pods_SecureKeyStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51248DFED2496D809255CF7B /* Pods_SecureKeyStorage.framework */; };
+		F7C87FF40BE553FE9B8176FA /* Pods_SecureKeyStorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64F8C39C49BA12869579971 /* Pods_SecureKeyStorageTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,10 @@
 		3F3D9BFC2233CCA200D1B804 /* RNCryptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RNCryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45BA29E1B3D5EC3B2892E2AD /* Pods-SecureKeyStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureKeyStorage.release.xcconfig"; path = "Target Support Files/Pods-SecureKeyStorage/Pods-SecureKeyStorage.release.xcconfig"; sourceTree = "<group>"; };
 		51248DFED2496D809255CF7B /* Pods_SecureKeyStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureKeyStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67682746166B040120656542 /* Pods-SecureKeyStorageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureKeyStorageTests.debug.xcconfig"; path = "Target Support Files/Pods-SecureKeyStorageTests/Pods-SecureKeyStorageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		82F9A35F8DCED11A607D9FC0 /* Pods-SecureKeyStorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureKeyStorageTests.release.xcconfig"; path = "Target Support Files/Pods-SecureKeyStorageTests/Pods-SecureKeyStorageTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F053B146539297CCFB1132B /* Pods-SecureKeyStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureKeyStorage.debug.xcconfig"; path = "Target Support Files/Pods-SecureKeyStorage/Pods-SecureKeyStorage.debug.xcconfig"; sourceTree = "<group>"; };
+		A64F8C39C49BA12869579971 /* Pods_SecureKeyStorageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureKeyStorageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3D9BD02232BDDB00D1B804 /* SecureKeyStorage.framework in Frameworks */,
+				F7C87FF40BE553FE9B8176FA /* Pods_SecureKeyStorageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +78,8 @@
 			children = (
 				8F053B146539297CCFB1132B /* Pods-SecureKeyStorage.debug.xcconfig */,
 				45BA29E1B3D5EC3B2892E2AD /* Pods-SecureKeyStorage.release.xcconfig */,
+				67682746166B040120656542 /* Pods-SecureKeyStorageTests.debug.xcconfig */,
+				82F9A35F8DCED11A607D9FC0 /* Pods-SecureKeyStorageTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 			children = (
 				3F3D9BFC2233CCA200D1B804 /* RNCryptor.framework */,
 				51248DFED2496D809255CF7B /* Pods_SecureKeyStorage.framework */,
+				A64F8C39C49BA12869579971 /* Pods_SecureKeyStorageTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F3D9BDD2232BDDB00D1B804 /* Build configuration list for PBXNativeTarget "SecureKeyStorageTests" */;
 			buildPhases = (
+				B05CFC8A1309D88B85AAB19A /* [CP] Check Pods Manifest.lock */,
 				3F3D9BCB2232BDDB00D1B804 /* Sources */,
 				3F3D9BCC2232BDDB00D1B804 /* Frameworks */,
 				3F3D9BCD2232BDDB00D1B804 /* Resources */,
+				9EAA2E480DD235CE175A1154 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,14 +196,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				TargetAttributes = {
 					3F3D9BC52232BDDA00D1B804 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					3F3D9BCE2232BDDB00D1B804 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -203,6 +214,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 3F3D9BBC2232BDDA00D1B804;
 			productRefGroup = 3F3D9BC72232BDDA00D1B804 /* Products */;
@@ -249,6 +261,50 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SecureKeyStorage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EAA2E480DD235CE175A1154 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecureKeyStorageTests/Pods-SecureKeyStorageTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SecureKeyStorageTests/Pods-SecureKeyStorageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B05CFC8A1309D88B85AAB19A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecureKeyStorageTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -418,7 +474,7 @@
 			baseConfigurationReference = 8F053B146539297CCFB1132B /* Pods-SecureKeyStorage.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FCNMCC2Y82;
@@ -437,7 +493,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -447,7 +503,7 @@
 			baseConfigurationReference = 45BA29E1B3D5EC3B2892E2AD /* Pods-SecureKeyStorage.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FCNMCC2Y82;
@@ -465,13 +521,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.adorsys.ios.SecureKeyStorage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		3F3D9BDE2232BDDB00D1B804 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67682746166B040120656542 /* Pods-SecureKeyStorageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -484,13 +541,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.adorsys.ios.SecureKeyStorageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		3F3D9BDF2232BDDB00D1B804 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82F9A35F8DCED11A607D9FC0 /* Pods-SecureKeyStorageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -503,7 +561,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.adorsys.ios.SecureKeyStorageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

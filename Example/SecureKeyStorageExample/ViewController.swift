@@ -105,9 +105,9 @@ class ViewController: UIViewController {
 
     func getFromKeychain() {
         DispatchQueue.global().async {
-            let value = try? SecureKeyStorage
+            let value = (try? SecureKeyStorage
                 .keychainStore(authenticationPrompt: self.authenticationPrompt)?
-                .getString(for: self.secretKey)
+                .getString(for: self.secretKey)) as String??
             DispatchQueue.main.async {
                 guard let unwrappedValue = value,
                     let info = unwrappedValue else {

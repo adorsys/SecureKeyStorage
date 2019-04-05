@@ -118,20 +118,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "adorsys GmbH & Co KG";
 				TargetAttributes = {
 					87407E541E705F3F0040A66C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = FCNMCC2Y82;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 87407E501E705F3F0040A66C /* Build configuration list for PBXProject "SecureKeyStorageExample" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -378,7 +378,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.adorsys.SecureKeyStorageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -395,7 +395,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.adorsys.SecureKeyStorageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
