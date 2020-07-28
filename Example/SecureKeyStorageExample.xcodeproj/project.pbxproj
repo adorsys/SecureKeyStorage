@@ -203,18 +203,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SecureKeyStorageExample/Pods-SecureKeyStorageExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
-				"${BUILT_PRODUCTS_DIR}/SecureKeyStorage/SecureKeyStorage.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SecureKeyStorageExample/Pods-SecureKeyStorageExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SecureKeyStorage.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SecureKeyStorageExample/Pods-SecureKeyStorageExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

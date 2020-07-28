@@ -37,7 +37,7 @@ public class KeychainStore: SecurelyStoring {
     }
 
     public func getData(for key: String) throws -> Data {
-        return try keychain.get(key, with: authenticationPrompt)
+        try keychain.get(key, with: authenticationPrompt)
     }
 
     public func remove(_ key: String) throws {

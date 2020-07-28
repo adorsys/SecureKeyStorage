@@ -205,7 +205,7 @@ internal class EncryptedStorageService {
     /// - Parameter user: A user for whom the key is created.
     /// - Returns: A string that contains the key to save the encryption key to the keychain.
     private func encryptionKeychainKey(for user: String) -> String {
-        return "SDS.encryptionKey-" + user
+        "SDS.encryptionKey-" + user
     }
 
     /// Creates the key that is used to store the hmac key of a user to the keychain.
@@ -213,6 +213,6 @@ internal class EncryptedStorageService {
     /// - Parameter user: A user for whom the key is created.
     /// - Returns: A string that contains the key to save the hmac key to the keychain.
     private func hmacKeychainKey(for user: String) -> String {
-        return "SDS.hamcKey-" + user
+        "SDS.hamcKey-" + user
     }
 }

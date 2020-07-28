@@ -32,7 +32,7 @@ public class EncryptedStore: SecurelyStoring {
     }
 
     public func getData(for key: String) throws -> Data {
-        return try secureStore.get(key)
+        try secureStore.get(key)
     }
 
     public func remove(_ key: String) throws {

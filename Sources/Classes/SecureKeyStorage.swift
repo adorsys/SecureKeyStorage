@@ -15,7 +15,7 @@ public enum SecureKeyStorage {
     /// If the device has a passcode set the keychain is encrypted and can be
     /// used to securely store data without further encryption.
     public static var deviceHasPasscode: Bool {
-        return LAContext().canEvaluatePolicy(.deviceOwnerAuthentication, error: nil)
+        LAContext().canEvaluatePolicy(.deviceOwnerAuthentication, error: nil)
     }
 
     /// Creates a `KeychainStore` object that saves and retrieves data from the
@@ -46,12 +46,12 @@ public enum SecureKeyStorage {
     public static func encryptedStore(name: String = defaultServiceName,
                                       password: String,
                                       user: String) -> EncryptedStore {
-        return EncryptedStore(service: name, user: user, password: password)
+        EncryptedStore(service: name, user: user, password: password)
     }
 
     /// A string that contains the default service name to use for secure stores.
     /// It's basically the identifier of the main bundle
     public static var defaultServiceName: String {
-        return String(describing: Bundle.main.bundleIdentifier)
+        String(describing: Bundle.main.bundleIdentifier)
     }
 }
